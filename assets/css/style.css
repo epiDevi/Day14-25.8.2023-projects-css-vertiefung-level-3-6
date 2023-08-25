@@ -31,7 +31,13 @@ h2 {
   font-size: 1.5rem;
   font-family: Karla-Regular;
   line-height: 22px;
-  
+}
+
+h3 {
+  font-family: Karla-Regular;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
 a {
   text-decoration: none;
@@ -53,7 +59,6 @@ p {
 /* ***** Header *****  */
 header .navbar {
   padding: 15px 0px;
-  margin-bottom: 40px;
 }
 
 .logo h2 {
@@ -69,8 +74,9 @@ header .nav a {
 
 /* - section großes Bild */
 
-.bild{
-    margin-bottom: 40px;
+.bild {
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .bild img {
   width: 100%;
@@ -91,26 +97,30 @@ header .nav a {
 .Galerie {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .raster img {
   width: 100%;
 }
 
-.image{
-    position: relative;
+.image {
+  position: relative;
 }
 .overlay {
-    background: var(--grau);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+  background: var(--grau);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
-.image:hover .overlay{
-    opacity: 0.1;
+.image:hover .overlay {
+  opacity: 0.1;
 }
 
 /* ***** footer *****  */
+
+footer {
+  display: flex;
+}
