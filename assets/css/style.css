@@ -1,78 +1,105 @@
-:root{
-    --grau: #848484;
-    --beige: #F3F3F3;
-    --dunkel-blau:#323A45;
+:root {
+  --grau: #848484;
+  --beige: #f3f3f3;
+  --dunkel-blau: #323a45;
 }
 
 @font-face {
-    font-family: Karla-bold;
-    src: url("../fonts/Karla-Bold.ttf");
+  font-family: Karla-bold;
+  src: url("../fonts/Karla-Bold.ttf");
 }
 
 @font-face {
-    font-family: Karla-Regular;
-    src: url("../fonts/Karla-Regular.ttf");
+  font-family: Karla-Regular;
+  src: url("../fonts/Karla-Regular.ttf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 /* ***** allgemein *****  */
-body{
-    font-size: 62.5%;
-    padding: 0 4vw;
-}
-a{
-    text-decoration: none;
-    color: var(--dunkel-blau);
-}
-p{
-    font-family: Karla-Regular,Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: var(--grau);
+body {
+  padding: 0 4vw;
 }
 
-.flex-space-between{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h2 {
+  color: black;
+  font-size: 1.5rem;
+  font-family: Karla-Regular;
+  line-height: 22px;
+}
+a {
+  text-decoration: none;
+  color: var(--dunkel-blau);
+}
+p {
+  font-family: Karla-Regular, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: var(--grau);
+  line-height: 22px;
 }
 
-.overlay{
-    background: var(--grau);
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.5;
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
+.overlay {
+  background: var(--grau);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
 
 /* ***** Header *****  */
-header .navbar{
-    padding: 15px 0px;
+header .navbar {
+  padding: 15px 0px;
 }
 
-.logo h2{
-    font-family: Karla-bold;
-    font-size: 20px;
+.logo h2 {
+  font-family: Karla-bold;
+  font-size: 20px;
 }
-header .nav a{
-    margin-left: 4vw;
-    text-transform: uppercase;
-    font-size: 10px;
+header .nav a {
+  margin-left: 4vw;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 /* ***** Main *****  */
-.Galerie{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 3;
+
+/* - section großes Bild */
+.bild {
+  margin-bottom: 60px;
 }
-.raster img{
-    width: 37.5vw;
-    
+
+.bild img {
+  width: 100%;
+  margin-bottom: 20px;
 }
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-color {
+  color: black;
+}
+
+/* - section Galerie */
+.Galerie {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 3;
+}
+.raster img {
+  width: 37.5vw;
+}
+
 /* ***** footer *****  */
