@@ -31,6 +31,7 @@ h2 {
   font-size: 1.5rem;
   font-family: Karla-Regular;
   line-height: 22px;
+  
 }
 a {
   text-decoration: none;
@@ -49,17 +50,10 @@ p {
   align-items: center;
 }
 
-.overlay {
-  background: var(--grau);
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-}
-
 /* ***** Header *****  */
 header .navbar {
   padding: 15px 0px;
+  margin-bottom: 40px;
 }
 
 .logo h2 {
@@ -74,18 +68,18 @@ header .nav a {
 /* ***** Main *****  */
 
 /* - section großes Bild */
-.bild {
-  margin-bottom: 60px;
-}
 
+.bild{
+    margin-bottom: 40px;
+}
 .bild img {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .price {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .price-color {
@@ -93,13 +87,30 @@ header .nav a {
 }
 
 /* - section Galerie */
+
 .Galerie {
   display: grid;
-  gap: 10px;
-  grid-template-columns: 3;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
 }
 .raster img {
-  width: 37.5vw;
+  width: 100%;
+}
+
+.image{
+    position: relative;
+}
+.overlay {
+    background: var(--grau);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.image:hover .overlay{
+    opacity: 0.1;
 }
 
 /* ***** footer *****  */
