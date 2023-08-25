@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font-family: Karla-Regular;
+  font-family: Karla-bold;
   font-size: 1.2rem;
   margin-bottom: 40px;
   margin-top: 60px;
@@ -49,6 +49,7 @@ p {
   color: var(--grau);
   line-height: 22px;
 }
+
 
 .flex-space-between {
   display: flex;
@@ -122,5 +123,27 @@ header .nav a {
 /* ***** footer *****  */
 
 footer {
-  display: flex;
+  align-items: flex-start;
+}
+footer a{
+    display: block;
+    font-family: Karla-Regular;
+    font-size: 1rem;
+}
+
+footer div:nth-of-type(1), footer div:nth-of-type(3) {
+    width: 400px;
+}
+footer div:nth-of-type(2), footer div:nth-of-type(4){
+    width: 216px;
+}
+
+footer p span{
+    font-family: Karla-bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contact{
+    margin-bottom: 40px;
 }
